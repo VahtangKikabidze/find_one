@@ -1,6 +1,6 @@
 <?
 
-$numb = str_split(implode("", file("numb.txt")));
+$numb = str_split(implode("", file("input.txt")));
 
 $counter = 0;
 
@@ -14,7 +14,7 @@ for ($i=0; $i < count($numb) ; $i++) {
 	}
 }
 
-echo max($numb_counter);
+file_put_contents('output.txt', max($numb_counter));
 
 
 ?>
